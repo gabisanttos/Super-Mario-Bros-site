@@ -155,7 +155,7 @@ main {
 @media only screen and (max-width: 600px) {
   /* Estilos para telas menores que 600px */
   #app {
-    padding: 24px;
+    padding: 24px; 
   }
 
   header {
@@ -185,7 +185,7 @@ main {
   main {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
   }
 
   .main_info {
@@ -207,18 +207,13 @@ main {
   .main_info div a {
     width: 100%;
   }
+  #background {
+    height: 100%; /* Altera a altura para ocupar toda a tela */
+  }
 
   #background::after {
-    background: linear-gradient(
-      109deg,
-      rgba(10, 12, 16, 0.99) 15%,
-      rgba(10, 12, 16, 0.7) 50%,
-      rgba(10, 12, 16, 0.99) 85%
-    );
-    position: fixed;
-    inset: 0;
-    content: '';
-    width: 100vw;
-    height: 100vh;
+    /* Ajusta a altura do gradiente linear para cobrir toda a tela */
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
   }
 }
+
